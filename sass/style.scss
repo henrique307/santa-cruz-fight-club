@@ -221,18 +221,15 @@ ul .nav-item:hover a {
   text-align: center;
 }
 
-.start-section-photo {
-  width: 50vw;
-  height: 100%;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Muay_Thai_Fight_Us_Vs_Burma_%2880668065%29.jpeg/1200px-Muay_Thai_Fight_Us_Vs_Burma_%2880668065%29.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .start-section-button a:hover {
   background-color: black;
   color: white;
+}
+
+@media (max-width: 993px) {
+  .start-section-infos-container {
+    width: 80%;
+  }
 }
 
 /* REPONSIVE */
