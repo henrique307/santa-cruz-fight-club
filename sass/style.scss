@@ -3,7 +3,9 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 html {
@@ -28,96 +30,132 @@ html {
 
 /* HEADER */
 
-nav.header {
-  height: 6rem;
+nav {
+  height: 5rem;
   position: fixed;
+  z-index: 2;
+}
 
-  div {
-    position: relative;
-    width: 70%;
-    height: 6rem;
+.nav-wraper {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  img {
+    display: block;
+  }
+
+  ul {
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 40%;
+
+    li,
+    a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .social-medias {
+    margin: auto;
+    margin-bottom: 0;
+    width: 60%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+  }
 
-    ul.right.hide-on-med-and-down {
-      display: flex;
-      justify-content: right;
-      width: 100%;
-    }
+  .icon img {
+    // background-color: white;
+    height: 20px;
+    width: 20px;
+  }
 
-    ul,
-    a {
-      animation: nav-ul-animation;
-      animation-timeline: scroll();
-    }
+  .facebook img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .social-medias .facebook img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .icon {
+    margin-left: 15px;
+    cursor: pointer;
   }
 }
 
-div.nav-wrapper {
-  position: relative;
+img.logo {
+  height: 50px;
+  width: 50px;
 }
 
-img.brand-logo {
-  animation: brand-logo-animation linear;
-  animation-timeline: scroll();
-  position: absolute;
-  top: 8px;
-  width: 65px;
-}
-
-@keyframes nav-ul-animation {
-  0% {
-    opacity: 0;
-  }
-
-  20% {
-    opacity: 1;
-  }
-}
-
-@keyframes brand-logo-animation {
-  0% {
-    top: 140px;
-    left: 38.3%;
-    width: 250px;
-  }
-
-  20% {
-    top: 13px;
-    left: 0;
-    width: 65px;
-  }
-}
-
-ul .nav-item:hover {
-  a {
-    color: black;
-    transition: 0.3s ease-in-out;
-  }
+ul .nav-item:hover a {
+  color: black;
   background-color: white;
   transition: 0.3s ease-in-out;
 }
 
-ul .nav-item {
-  display: flex;
-  height: 6rem;
-  a:hover {
+@media (max-width: 993px) {
+
+  .social-medias a:hover {
     background-color: transparent;
   }
 
-  a {
-    margin: auto 0;
+  
+  .social-medias a {
+    padding: 0;
   }
-}
+  
+  .nav-wraper {
+    position: relative;
+    flex-direction: row-reverse;
+    z-index: 3;
+    .icon {
+      margin: 0;
+    }
+    .logo {
+      margin: auto;
+    }
 
-nav {
-  z-index: 2;
-}
+    .sidenav-trigger {
+      left: 0;
+      position: absolute;
+    }
+    
+    ul.nav-mobile {
+      z-index: 1;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 50px 0;
 
-.sidenav-overlay {
-  z-index: 1;
+      li {
+        width: 100%;
+        height: unset;
+      }
+
+      li.nav-item:hover, .nav-item a:hover {
+        background-color: black;
+        color: white;
+        transition: all 300ms linear;
+      }
+    }
+  }
+
+  .sidenav-overlay {
+    z-index: 1;
+  }
 }
 
 /* HEADER END */
@@ -127,11 +165,43 @@ nav {
 /* START SECTION */
 
 .start-section {
-  padding-top: 20rem;
-  height: 150vh;
-  background-color: black;
+  position: relative;
+  padding-top: 5rem;
+  height: 120vh;
   animation: start-section linear;
   animation-timeline: scroll();
+}
+
+.overlay {
+  background-color: black;
+  opacity: 0.8;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.start-section-container {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Muay_Thai_Fight_Us_Vs_Burma_%2880668065%29.jpeg/1200px-Muay_Thai_Fight_Us_Vs_Burma_%2880668065%29.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.start-section-infos-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .start-section-header {
@@ -145,33 +215,6 @@ nav {
 .start-section-description h5 {
   margin-top: 0;
   margin-left: auto;
-}
-
-// * {
-//   margin-bottom: 30px;
-//   text-align: center;
-// }
-
-// h5 {
-//   margin: 0 auto;
-// }
-
-// .start-section-infos-container {
-//   margin-left: 0;
-//   text-align: center;
-// }
-
-.start-section-container {
-  width: 50%;
-  margin: 100px auto 0 auto;
-}
-
-.start-section-infos-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .start-section-infos-container * {
@@ -192,57 +235,7 @@ nav {
   color: white;
 }
 
-@keyframes start-section {
-  0% {
-    opacity: 1;
-    background-color: black;
-  }
-
-  10% {
-    opacity: 0;
-    background-color: white;
-  }
-}
-
 /* REPONSIVE */
-
-@media (max-width: 993px) {
-  @keyframes brand-logo-animation {
-    0% {
-      top: 100px;
-      width: 250px;
-    }
-
-    10% {
-      top: 8px;
-      width: 65px;
-    }
-  }
-
-  .start-section-container {
-    display: flex;
-    margin: 100px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: unset;
-    position: unset;
-
-    * {
-      margin-bottom: 30px;
-      text-align: center;
-    }
-
-    h5 {
-      margin: 0 auto;
-    }
-
-    .start-section-infos-container {
-      margin-left: 0;
-      text-align: center;
-    }
-  }
-}
 
 /* START SECTION END */
 
@@ -339,7 +332,7 @@ nav {
     width: 80%;
   }
 
-  min-width: 350px;
+  min-width: 250px;
 }
 
 // END BENEFICIOS SECTION
@@ -347,10 +340,11 @@ nav {
 // START FEATURES
 
 .features-section {
-  margin: 10rem 0;
+  margin: 15rem 0;
 }
 
 .features-container {
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -364,6 +358,12 @@ nav {
 @media (max-width: 993px) {
   .features-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .features-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -411,5 +411,31 @@ nav {
 }
 
 // END VIDEOS
+
+// FOOTER
+.page-footer .container .row {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer .container .row div {
+  margin: 0 auto;
+}
+
+.footer-description {
+  text-align: center;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.connect {
+  text-align: right;
+}
+
+// FOOTER END
 
 /* MAIN START SECTION END  */

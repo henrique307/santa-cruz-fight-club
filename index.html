@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Santa Cruz Fight Club</title>
 
   <!-- CSS  -->
@@ -15,32 +15,40 @@
 
 <body>
   <nav class="black header" role="navigation">
-    <div class="nav-wrapper container">
-      <img src="./assets/logo fight club.png" id="logo-container" href="#" class="brand-logo" />
-      <ul class="right hide-on-med-and-down nav">
-        <li class="nav-item"><a href="#">Navbar Link</a></li>
-        <li class="nav-item"><a href="#">Navbar Link</a></li>
-        <li class="nav-item"><a href="#">Navbar Link</a></li>
+    <div class="nav-wraper">
+      <img src="./assets/logo fight club.png" id="logo-container" href="#" class="logo" />
+      <ul class="hide-on-med-and-down">
+        <li class="nav-item"><a href="#muayThai">Home</a></li>
+        <li class="nav-item"><a href="#beneficios">Beneficios</a></li>
+        <li class="nav-item"><a href="#caracteristicas">Caracteristicas</a></li>
+        <li class="nav-item"><a href="#videos">videos</a></li>
+        <a target="_blank" href="https://twitter.com/FlorencioHenri"><li class="icon twitter"><img src="data:image/png;base64,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" alt="twitter"></li></a>
+        <a target="_blank" href="https://www.linkedin.com/in/henrique-florencio-b04b5b198"><li class="icon instagram"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAY1BMVEUAAAD///9jY2P5+fn29vbr6+tmZmZpaWkTExO9vb3y8vKamprT09PPz898fHze3t51dXWpqakuLi7k5ORvb2+goKA8PDywsLC3t7cgICCLi4tUVFTIyMgpKSmEhISRkZFMTEwjH9KLAAAEbklEQVRogcVabduyIAw1X1J8t9SszPr/v/LJdBsIiGH39ZxPgXqcsJ0NyHFUON3zpOpYnxbFOQiC2Pc97yDC8/wgOBdFxrrm6baRkkfC49YHh68Rp0lrpB6K74kBwXPV/sa3px7hVVrqMt5H/aHP1dzdfuoRTEEdWcyiGoE08u0PhgQQL/wmkriDlHVVkyS3vCzrOgzD4xsu4HgMw7rMb0lTsV5ysFi0XRiTmA2nNZ9SoL4IDAF/jXEXivpL4hku/wEd9efU64d21B96bmxL7CXdSDdqhBpRSkMLfRV29XuoR/RI1czvQ8PTvdyOg7b7U/up8aBvgE9GqE7Dp41O5Foy37P3w9l9aoTodWOrFVoWGARTHfTIx7uR7DT8hXP4+rRraN4cmoJgjWEFFICzr8XURFW5WJIjNzgII2txyC2jniM/TB0wB4eT44pX9GjLprpcqqRcCCplxjkqT9C+k5evEUdDxmVXPxu4iLhgP6gVtHOnmX+tOOKJLYuWg8dQlB/YCV0QOAlmTq2sXNmSeQK7zje8pld7L3gC/K/CuVXl1RG5ZDVaD4n+2py9c3PFR4CyczJ8jRIas1cN6vAyRGujvM9Qf6knCiS8x8cT1W3GckMZ1uAjqXOef93MdgdplqWL96lsT/Aa3Kwow4TxzvLZt6M84/sV4y6Tl9I9OU8hhGXLv1a26jZfOWP0StJyJR/0JDV2KWC96/IiWBVg5pdKCrLuLH+5g3OlGJjSSH4ibmVqjYh9WZ4ROdxx1Bnuq6hH4LAtTYdcFCP5Ylip3tBmPxRrb/FpkKN9HTkqvk5z+I8bviRHX15Zo2ESy9Tkno7cVz+ntmAxLUcDORqlWT9NwDATPw/IDxpy8KbDaoUXwV1ieJvIQR4MxQxoh6jXJnKQZEPdSwmNh2sgh5S+Op80o2JB9V/JfzwsorZ8OaFijjSR73JFE/muICJyjZ7vCX8j+R7hMpLvkVwi1yToPcmCyGM1+YY0hwXA8uNIW3R1y44ETclCWxTZlxYyueTQXFHky0URVzFJRRFlf30hal3OUd2yUkLbFqL5FvItJbRKNqkQBdVUrizsin8qoWFvR70mslq20OqTll5K2Cy4INNk3NJLjQ1LRZ1BzJzQjItcCTDS3ZaEtr48l0GrTwwV/c3rGwsy4L6nc4efpu3btkyUWyJ6cpfUbzA9sxW4ydVSoKyknO8ABdW4TQlzG5sf2wawdvQ/UALrTa4FMMmNaoU7Pbablgvgbu5n4lE/dmydE9DwKXCwivB3bZ5PoMOP59SB8fHLLW6oN0Aif7o5jxJOZw0/O1bwsBML5re3226ivxFy+sPJMX8sV1jS13zWEsJdPEK6fBtPp4EJR2SifsvHZ0XPqmY8PKvDkI7NxoOz8egsrMvx8Cxpqo4tCwL58OMvD/7+9sjSMST67dBItz7Rb0csbyECqp30vnpHGEb+uWPoC3OmbJPUwnOC/vYwUk/2t+6z6Vj2+TOE8p8Qfhx8/gyR9qyrkvyuLh3+AQ/2MzNCkk3PAAAAAElFTkSuQmCC" alt="instagram"></li></a>
+        <a target="_blank" href="https://henrique307.github.io/portfolio-react"><li class="icon facebook"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAbFBMVEUAAAD///93d3f09PTl5eXZ2dn5+flmZmZ7e3vc3NyoqKjp6el0dHRRUVHw8PDW1tZtbW1dXV21tbVLS0uKiorIyMiSkpKampqioqJYWFhCQkINDQ29vb2urq6Dg4MYGBg2NjYvLy8eHh4oKCjJcwThAAACdUlEQVR4nO3dbW+qMBiAYRAGIlpABuILzp3z///j2acl7jwbjXS2D7nvz9LmiiSGgiWKiIiIiIiIiIiIiIiIKNDOu3r19Orj+TcszViZ5OmZl33u3nJNY0+lr64tTeLLEsdJ7Rhj/FniOHNryX1a4njlFHPxi+mcYiq/mNIp5sUvJgUDBgwYMGDAgAkUk5kyLYoi/ag0SZapxSTVZeyvdd58lNf16vraHzbjuFeIqYb17k2cSx2mW7XfzqUMY/LbD3Ppwuzff5xLFeY6MZcmzOTihB5MNvW9KMJkw/RcajDdbTmY0mYRXAtmbzOXEow5LQhzsZpLByY7Lghj7ObSgRmXhPn2LHs/tbvPTjow8tB/6v5SpeVn0r3T8DDyzbzT3uJuaXiYShr4r9VtrPAw4s//aHVoeJiDNLDdoeFhpCuZrVbMWhjX7ixTgumWhCnAgAEDBgwYMGDAeMFIlwCWD0t7x5hhc9coLc4cNl87lCFiigenCnJ15lGM9JSGWow0llZMuyTMekmYYUkY8V8HWjHicq1WjPSbqRYj/utIKaYVb3AoxdRLwvTiM6dKMfJKulKMvJKuFCNfeoLxjrnJ19HeMWW+vWt9E8bNV/cf6uV/6nrHZOV9ZiuM25kvH5LH8o75r0UtNYEBAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwsC42Ek7GIy0heITMW73OHex+/wMjPTYzYzEx42fhbHcfce6Zv5bDh7GJI6/mChaW54R7jHu36URRcehSrIZiTsbVvHEUUk1NO4tUXRum3xGtbR75nHqqKb9lffPEBEREREREREREREReesfbpRRyOV2630AAAAASUVORK5CYII=" alt="facebook"></li></a>
       </ul>
-      <ul id="nav-mobile" class="sidenav">
-        <li class="nav-item"><a href="#">Navbar Link</a></li>
-        <li class="nav-item"><a href="#">Navbar Link</a></li>
-        <li class="nav-item"><a href="#">Navbar Link</a></li>
+      <ul id="nav-mobile" class="sidenav nav-mobile">
+        <li class="nav-item"><a href="#muayThai">Home</a></li>
+        <li class="nav-item"><a href="#beneficios">Beneficios</a></li>
+        <li class="nav-item"><a href="#caracteristicas">Caracteristicas</a></li>
+        <li class="nav-item"><a href="#videos">videos</a></li>
+        <div class="social-medias">
+          <a target="_blank" href="https://twitter.com/FlorencioHenri"><li class="icon twitter"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAY1BMVEX///8AAAC8vLz7+/vu7u739/ff39/n5+fz8/NdXV2cnJxFRUXAwMAjIyPOzs7j4+MVFRWFhYVTU1PU1NSzs7ONjY1mZmbGxsapqalubm53d3dLS0sdHR0LCws4ODijo6MqKipZ+7BdAAAC0klEQVRoge2Z14KqMBBA6b2HjqD//5WLGEVSJ5D7dD0PuypwnB2SYZI1jB8/fohxci93/oXYi2IT01p6v6GrzG/mMSdOyJKz6nwyKUb7+7tj0/u8qZXcd1q9kiJ82OkX0xz2v8FsFNwj071irQfdZNhe72lqTbMEu1uee01NE+JXe7DO8e3JuL9Z9htgbR/AYu8h7sLfLyhNsN2HuPFIcbef74HV2iLvRiWU4rifbseKt2Dt2/vjKpC4EcAdBwaKwhnn3d0PpJ5YPsjdcxvP2+9XSXC/jwmnEyzjL/CUOsjNweXLa7i7w5fY8+HjlF9yAFnB7I6YONL6HDmjXsncjIBKdoEuYOo5+7qGUeXmhjUqYe7lUNs95jkjPSxhcuKihX1WVQca5PxqFNaOqnwm5HYqOHlqEh8XHdFpHx5kMmWz4xGOfZL5oKE4UbcqlF8EpaXkDugvBjFSciPXJj8+c9DwnO5oll8H4n6UryO6R4ZDlpiTdAf5q0o/QkHPoAI6yG1dCdkoiJqnKR8vFmKklDrlAyGHPNPB3Am51rwgUm7pcxd0Y6UvdLqyaMy6RcthjTEEZkOoqeYysrJi60k7Kysrro7YC24v2FyXC9YPGafFgCPswC3IyoFPKHKv5NHjvDzjavtwGIY2vJCaih8zu2PUE/j1ecSeQJpCFy/Wrj2RJGtk98o4L8Tua4npZHIjO+2GbBycfWqQDQUb/1QBmHmLS5LohFye8Dduo9qs92D3U5+UKqNSZfftReBDV/rwvbddDm0IGMsUGTW0r1aPG4EHpHK+PfgaQ22f1ghq+DRKRY8HCjsZFcZ4Bd42D/KkUSu5VJtPgaa4qqYpXm5y2zFsyS7hhnOqwS04TSGFB990exMJ9gdJcqXob5FsV5ZMTgQdJXGtEPUbuwNMnaKB3EYmgbDS3qrotBmTJyWj80rHO9L2jyavsz4kmeL9+/Hjv+IPDJol7DiD52gAAAAASUVORK5CYII=" alt="twitter"></li></a>
+          <a target="_blank" href="https://www.linkedin.com/in/henrique-florencio-b04b5b198"><li class="icon instagram"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROODT-Tx-ErnWbGeI31ZA8yMrHfc2j2KMEbNI7Vkh6KQ4J-Rf5Zk7J&usqp=CAE&s" alt="instagram"></li></a>
+          <a target="_blank" href="https://henrique307.github.io/portfolio-react"><li class="icon facebook"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEUAAAD////4+PiBgYGSkpIKCgoeHh7i4uJqamrT09Po6Ohzc3MODg7MzMz8/PyOjo6YmJi7u7vy8vKxsbHBwcEpKSk9PT0kJCRDQ0OoqKifn58VFRVcXFwvLy9UVFTb29tKSkoikAvMAAAEZklEQVR4nO2d2ZqiMBBGQ9ihBVnUxv39n3KkXQC3ECLkj1Pnrr9vLuoMkgpZqph1By88ZgRewe9jZ3d/+7HuIPsT+29leLnXHaEM25K/lsmrle745FhU+SuZfL7QHZ0si3n+XIbbhrz6bTybP5Phju7AhuEkT2TWuqMayvpRptroDmoom+peJjTu3W9YhF2ZaKs7IhW2UVsmt13dAang2nlLJtvpjkeNXdbIRIHuaFQJoqtMUhmYLbt4VXKR8Y1/MKdH459lkupHdyjquPWjYaYPy1fq4fkkE+qO4zOEtUxu6w7jM5xyDbP8pe4wPsPSP8lkuqP4FJnFki/5lZ1+ZwnLjVrCeMc+Z77uGD6Hz0rdIXyOks11h/A55uwL5mVXAvYlWaZmyYyf/Td4zOjv5S7ud8kQn2axPG6DIH5FYMz/+S5wqmwWHvzoJaERo9Rm78wOUd4sfT8nMkBmFWfRw77kM3x8mSDsZWKCzH7W0wRfZmPnYgdDZHbrvr8wfBkvk1EBl6nE8Rsj44jyikEyscy7jy4TiqM3RmYuNZBhyxzlHwyujCP9xuDKLCVmMfAycfRFMmtx6MbI7MovktneH6s0WcaWTzKwMt5adloGLLMrhrhYOeQ52N8eWSY/FE4cdNhCnro4HkQqfP2rO8i+CAezyKDt4kCQ/xPHmIVY8XfZwaStb5FMZtKxV1HONOlstSuSMWnrWyhj0gl+kkGFZFAhGVRIBhWSQeX/kkl1RyiB+TLujT4/s58n6DZoETvpjUywBlimziMp0KrZzEoa3ru0/2XDAehM7JDdpQ4h0FVFZZkSaJVDWQap4oKyzBroCrmyTAo0NqvKcKTlZ1WZHOnqhaqMj3SNVFXmcNRt0EJVZoa0+6QqUwLNZpRlCqDZjLIM0gRAVSZxgHKmsgxSzlSVyaEKrinKYNXEUJTB2oBWlIHKmaoyWLvpijIF0KdZLcNvCFdn+D1gRwP2rfNWlcCmCB6AemU6/FcL5ySjCZJBhWRQIRlUSAYVkkGFZFAhGVRIBhWSQYVkUCEZVEgGFZJBhWRQIRlUSAYVkkGFZFAhGVRIBhWSQYVkUCEZVEgGFZJBhWRQGV1myoqCI8tM2+ZodJkpr6eNLLNiU561H1nmd9IOdCPLBJP2BhxZZj1p18aRZUrmT3inc1yZH3/STqfjyuzzSXvQjitjJ8zKpkubo8q4mcWsaLr79qPKLKOTDJ+uDpdrCy7QqcikfNpe524wC9+icik7PHehn24S4HpvWSlcMA3OXeiTArKHgBxekfzJgN1SH0ZQ17WvZZICqUzFIFb1g/mTAauGMIRzJfg/GatEKocygEtbm7MMRyq7Jc9PylsyWKWqpAku7QYuMhZSSURZltd2I1cZq4Aq7yDD4tbU5iZjVVD1HfqzaRpaNjIJVoGH3rQ6JzUyFncMzJ2reWsi3pKxeGVcutlV7S+ktozFTRsFFkXna68jYyUzpGqCQraz7sdeV6ZummTMoOal902T/gEkNEBVu0Fl/wAAAABJRU5ErkJggg==" alt="facebook"></li></a>
+        </div>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
-  <section class="start-section" id="index-banner muayThai">
-    <div class="teste"></div>
+  <section class="start-section" id="muayThai">
+    <div class="overlay"></div>
     <div class="start-section-container">
       <div class="start-section-infos-container">
         <h4 class="start-section-header black-text">A Arte do Muay Thai</h4>
         <div class="start-section-description">
-          <p class="white-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident explicabo fugiat
-            obcaecati quas illum
-            rerum? Obcaecati esse corporis in ex, quas sit Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Dolores officiis possimus non qui nobis eum reprehenderit ipsa repellendus quasi atque omnis, fugiat error
+          <p class="white-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident explicabo fugiat obcaecati quas illum
             esse! Ipsam ducimus suscipit magnam optio sapiente.
           </p>
         </div>
@@ -48,46 +56,34 @@
     </div>
   </section>
 
-  <section class="benefits-section" id="index-banner beneficios">
+  <section class="benefits-section" id="beneficios">
     <h2 class="benefits-header">Quais são os beneficios ?</h2>
     <div class="benefits benefits-1">
       <div class="bfs-defesa-box bfs-photo-box">
         <div class="bfs-defesa-photo bfs-photo"></div>
       </div>
       <section class="bfs-description defesa-description">
-        <h3 class="bfs-description-header">Defesa pessoal</h3>
+        <h4 class="bfs-description-header">Defesa pessoal</h4>
         <div class="bfs-defesa-container">
           <h5 class="bfs-title">Primeiro conjunto de beneficios</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cum tenetur natus ducimus cumque vitae dolores
-            exercitationem, ipsa?
-          </p>
-        </div>
-        <div class="bfs-defesa-container">
-          <h5 class="bfs-title">Segundo conjunto de beneficios</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cum tenetur natus ducimus cumque vitae dolores
-            exercitationem, ipsa?
-          </p>
+          <ul>
+            <li>Beneficios 1</li>
+            <li>Beneficios 2</li>
+            <li>Beneficios 3</li>
+          </ul>
         </div>
       </section>
     </div>
     <div class="benefits benefits-2">
       <section class="bfs-description fitness-description">
-        <h3 class="bfs-description-header">Esporte para todas as idades!</h3>
+        <h4 class="bfs-description-header">Esporte para todas as idades!</h4>
         <div class="bfs-defesa-container">
-          <h5 class="bfs-title">Primeiro conjunto de beneficios</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cum tenetur natus ducimus cumque vitae dolores
-            exercitationem, ipsa?
-          </p>
-        </div>
-        <div class="bfs-defesa-container">
-          <h5 class="bfs-title">Segundo conjunto de beneficios</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cum tenetur natus ducimus cumque vitae dolores
-            exercitationem, ipsa?
-          </p>
+          <h5 class="bfs-title">Mais beneficios</h5>
+          <ul>
+            <li>Beneficios 1</li>
+            <li>Beneficios 2</li>
+            <li>Beneficios 3</li>
+          </ul>
         </div>
       </section>
       <div class="bfs-fitness-photo-box bfs-photo-box">
@@ -197,40 +193,39 @@
   <footer class="page-footer black">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
+        <div class="col l6 s12 footer-description">
           <h5 class="white-text">Projeto para academia de Muay Thai</h5>
           <p class="grey-text text-lighten-4">Landing page desenvolvida por Henrique Florencio, foi utilizado o
             framework materialize para facilitar o desenvolvimento do projeto, que foi completo em 2 dias sem muitas
-            dificuldades, obrigado pela visita!</p>
-
-
+            dificuldades, <div class="orange-text">obrigado pela visita!</div></p>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Mapping</h5>
-          <ul>
-            <li><a class="white-text" href="#muayThai">A Arte do Muay Thai</a></li>
-            <li><a class="white-text" href="#beneficios">Benefícios</a></li>
-            <li><a class="white-text" href="#caracteristicas">Características</a></li>
-            <li><a class="white-text" href="#videos">Videos</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="https://henrique307.github.io/portfolio-react/">Meu Portfolio</a></li>
-            <li><a class="white-text" href="https://www.linkedin.com/in/henrique-florencio-b04b5b198/">LinkedIn</a></li>
-            <li><a class="white-text" href="https://twitter.com/FlorencioHenri">Twitter</a></li>
-          </ul>
+        <div class="links">
+          <div class="col l3 s12 map">
+            <h5 class="orange-text">Map</h5>
+            <ul>
+              <li><a class="white-text" href="#muayThai">A Arte do Muay Thai</a></li>
+              <li><a class="white-text" href="#beneficios">Benefícios</a></li>
+              <li><a class="white-text" href="#caracteristicas">Características</a></li>
+              <li><a class="white-text" href="#videos">Videos</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12 connect">
+            <h5 class="orange-text">Contatos</h5>
+            <ul>
+              <li><a https://twitter.com/FlorencioHenriclass="white-text" href="/">Meu Portfolio</a></li>
+              <li><a class="white-text" href="https://www.linkedin.com/in/henrique-florencio-b04b5b198/">LinkedIn</a></li>
+              <li><a class="white-text" href="https://henrique307.github.io/portfolio-react">Twitter</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
-        Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      <div class="container center">
+        Made by <a class="orange-text text-lighten-3">Henrique Florencio</a> using <a class="orange-text text-lighten-3" href=href="http://materializecss.com">Materialize</a>
       </div>
     </div>
   </footer>
-
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
