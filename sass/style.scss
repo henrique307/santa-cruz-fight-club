@@ -4,8 +4,8 @@
 
 body {
   position: absolute;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
 }
 
 html {
@@ -22,6 +22,10 @@ html {
 
 .icon-block {
   padding: 0 15px;
+
+  p {
+    text-align: justify;
+  }
 }
 
 .icon-block .material-icons {
@@ -173,7 +177,7 @@ ul .nav-item:hover a {
 
 .overlay {
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.9;
   position: absolute;
   right: 0;
   left: 0;
@@ -206,9 +210,10 @@ ul .nav-item:hover a {
 .start-section-header {
   font-style: italic;
   letter-spacing: 3px;
-  padding: 10px 30px;
   font-weight: 500;
   margin-top: 0;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 .start-section-description {
@@ -217,7 +222,7 @@ ul .nav-item:hover a {
     margin-left: auto;
   }
   p {
-    font-size: 16px;
+    font-size: 25px;
   }
 }
 
@@ -295,6 +300,8 @@ ul .nav-item:hover a {
 }
 
 .fitness-description {
+  margin-right: 30px;
+  text-align: right;
   animation: left-side-animation linear;
   animation-timeline: view();
 }
@@ -315,12 +322,8 @@ ul .nav-item:hover a {
 }
 
 .benefits-1 {
-  .bfs-description-header {
-    text-align: right;
-  }
-  .bfs-defesa-container {
-    text-align: right;
-    margin-left: auto;
+  .defesa-description {
+    margin-left: 30px;
   }
 }
 
